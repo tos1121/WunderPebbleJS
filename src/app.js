@@ -79,7 +79,7 @@ var error = new UI.Card(
 	style: "small",
 	scrollable: true
 });
-var splash = new UI.Card( { banner: "images/splash.png" } );
+//var splash = new UI.Card( { banner: "images/splash.png" } );
 var loading = new UI.Card( { banner: "images/loading.png" } );
 var listMenu = new UI.Menu( {sections: [{items:[]}] } );
 var sublistMenu = new UI.Menu( {sections: [{items:[]}] } );
@@ -201,7 +201,7 @@ function programStart()
 {
 	if( typeof Settings.option( "token" ) !== "undefined" && Settings.option( "token" ) !== null )
 	{
-		splash.show();
+		//splash.show();
 		noConfig.hide();
 
 		if( Settings.data( "user" ) === null )
@@ -213,7 +213,7 @@ function programStart()
 				getShares( function() {
 					getLists( null, function() {
 						listMenu.show();
-						splash.hide();
+						//splash.hide();
 					});
 				});
 			});
